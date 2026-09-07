@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">DevOps<span>Lab</span></div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tag">DOCKER • KUBERNETES • CI/CD</p>
+
+                <h1>
+                    Deploy. Scale.<br>
+                    <span>Automate.</span>
+                </h1>
+
+                <p class="description">
+                    A simple static website running inside an Nginx
+                    Docker container — perfect for learning DevOps.
+                </p>
+
+                <button onclick="showMessage()">
+                    Test Container
+                </button>
+
+                <p id="message"></p>
+            </div>
+        </section>
+
+        <section id="about" class="cards">
+
+            <div class="card">
+                <h2>🐳 Docker</h2>
+                <p>
+                    Package the website into a lightweight,
+                    portable container.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>☸ Kubernetes</h2>
+                <p>
+                    Deploy and scale the container using
+                    Kubernetes.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🔄 CI/CD</h2>
+                <p>
+                    Automatically build and deploy every
+                    new version of the application.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>DevOps Lab © 2026 | Running in Docker 🚀</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "✅ Your website is running successfully inside a container!";
+        }
+    </script>
+
+</body>
+</html>
